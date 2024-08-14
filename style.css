@@ -1,0 +1,128 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border-radius: 6px;
+    font-family: cursive;
+}
+body{
+    background: linear-gradient(rgba(7, 123, 255, 0.758), rgb(0, 170, 255));
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    height: 70%;
+    width: 70%;
+    background-color: aliceblue;
+    display: flex;
+    padding: 40px;
+    gap: 10px;
+}
+.animation{
+    width: 35%;
+}
+.gameboard{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+.word{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 4px;
+
+}
+.hint{
+    text-align: center;
+    font-size: 22px;
+    color: brown;
+}
+.alphabets{
+    width: 100%;
+    height: 45%;
+    display: grid;
+    grid-template-columns: repeat(9, 50px);
+    gap: 10px;
+    padding: 20px;
+    justify-content: space-between;
+
+}
+.alphabets .alphabet{
+    height: 30px;
+    width: 40px;
+    background-color: skyblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.alphabets .alphabet:hover{
+    background-color: rgba(135, 207, 235, 0.8);
+}
+.word .alphabet{
+    font-size: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.animation{
+    width: 100%;
+    height: 100%;
+    margin: -40px;
+}
+.animation img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.chance{
+    width: 50%;
+    height: 50%;
+    font-size: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gameover{
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.87));
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 156px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 10px;
+}
+.won{
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.87));
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 156px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.forUser{
+    font-size: 46px;
+}
